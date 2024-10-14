@@ -12,4 +12,6 @@ add_executable(Project3
         SplayTree.h
         data/climate_change_impact_h.cpp
         climate_change_impact_h.h
-        project1main.h)
+        project1main.h
+        project1main.h
+        climate_change_impact_h.h)

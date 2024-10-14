@@ -59,6 +59,24 @@ public:
         this->crop_yield_mt_per_ha = crop_yield_mt_per_ha;
         this->average_temperature_c = average_temperature_c;
     }
+    bool operator==(const ClimateChangeImpact& next) const {
+      return id == next.id;
+    }
+    bool operator!=(const ClimateChangeImpact& next) const{
+      return id!=next.id;
+    }
+    bool operator<=(const ClimateChangeImpact& next) const{
+        return id <= next.id;
+    }
+    bool operator>=(const ClimateChangeImpact& next) const{
+        return id >= next.id;
+    }
+    bool operator<(const ClimateChangeImpact& next) const{
+      return id < next.id;
+    }
+    bool operator>(const ClimateChangeImpact& next) const{
+      return id > next.id;
+    }
     int getId() {
         return id;
     }
