@@ -11,6 +11,7 @@ private:
         AVLNode* leftChild;
         AVLNode* rightChild;
         int height;
+        int depth;
 
         // Constructors
         AVLNode() : value(Comparable()), leftChild(nullptr), rightChild(nullptr), height(0) {}
@@ -40,7 +41,7 @@ private:
     }
 
     // Helper recursive function to find a value in the tree.
-    bool find(const Comparable &c, AVLNode* n, int depth) const {
+    bool find(const Comparable &c, AVLNode* n, int& depth) const {
         depth = 0;
         if (n == nullptr) {
             // Reached a dead end. Value not in tree.
@@ -228,9 +229,9 @@ public:
         return (root == nullptr);
     }
 
-    bool find(const Comparable &c, int depth) const {
+    bool find(const Comparable &c, int& depth) const {
         // calls private helper function
-        return find(c, root);
+        return find(c, root, depth);
     }
 
     bool add(const Comparable &c) {

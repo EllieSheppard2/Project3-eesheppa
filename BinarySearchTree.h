@@ -10,6 +10,7 @@ private:
         Comparable value;
         BinaryNode* leftChild;
         BinaryNode* rightChild;
+        int depth;
 
         // Constructors
         BinaryNode() : value(Comparable()), leftChild(nullptr), rightChild(nullptr) {}
@@ -39,7 +40,7 @@ private:
     }
 
     // Helper recursive function to find a value in the tree.
-    bool find(const Comparable &c, BinaryNode* n, int depth) const {
+    bool find(const Comparable &c, BinaryNode* n, int& depth) const {
         depth = 0;
         if (n == nullptr) {
             // Reached a dead end. Value not in tree.
@@ -149,7 +150,7 @@ public:
         return (root == nullptr);
     }
 
-    bool find(const Comparable &c, int depth) const {
+    bool find(const Comparable &c, int& depth) const {
         // calls private helper function
         return find(c, root, depth);
     }

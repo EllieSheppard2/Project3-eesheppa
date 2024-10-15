@@ -17,37 +17,13 @@ int main() {
     BinarySearchTree<int> btree;
     AVLTree<int> atree;
     SplayTree<int> stree;
-    for (int i = 1, int i < 101, i++) {
+    for (int i = 1; i < 101; i++) {
         btree.add(i);
         atree.add(i);
         stree.add(i);
     }
-    // Example of how to declare and use a tree object
-    BinarySearchTree<int> bst1;
-    if (!bst1.add(8)) {
-        cout << "Could not add 8 to the tree." << endl;
+    for (int i = 1; i < 101; i++) {
+        int depth = 0;
+        cout << btree.find(i, depth) << endl;
     }
-    if (bst1.find(8)) {
-        cout << "Found 8 in the tree." << endl;
-    }
-    if (bst1.getSize() != 1) {
-        cout << "There are " << bst1.getSize() << " nodes in the tree." << endl;
-    } else {
-        cout << "There is one node in the tree." << endl;
-    }
-    bst1.timber();
-
-    SplayTree<int> test;
-    for (int i = 0; i < 100; ++i) {
-        if (!test.add(i)) {
-            cout << "Could not add " << i << endl;
-        }
-    }
-    cout << "Size: " << test.getSize() << endl;
-    for (int i = 0; i < 100; ++i) {
-        if (!test.find(i)) {
-            cout << "Could not find " << i << endl;
-        }
-    }
-    return 0;
 }
