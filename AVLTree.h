@@ -50,12 +50,12 @@ private:
         if (c < n->value) {
             // Value is less than current node. Go to node's left child.
             depth++;
-            return find(c, n->leftChild);
+            return find(c, n->leftChild, depth);
         }
         if (n->value < c) {
             // Value is greater than current node. Go to node's right child.
             depth++;
-            return find(c, n->rightChild);
+            return find(c, n->rightChild, depth);
         }
         // If code reaches here, c == n->value. Node found!
         return true;
@@ -231,6 +231,7 @@ public:
 
     bool find(const Comparable &c, int& depth) const {
         // calls private helper function
+        depth = 0;
         return find(c, root, depth);
     }
 
