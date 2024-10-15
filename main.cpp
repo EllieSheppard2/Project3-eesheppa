@@ -7,13 +7,11 @@
 using namespace std;
 
 int main() {
-    // Example of writing out to a file
-    ofstream outFile;
-    outFile.open("../data/example-output.csv");
-    for (int i = 999; i >= 0; --i) {
-        outFile << i << endl;
+
+    std::ofstream outFile("/Users/elliesheppard/Project3-eesheppa/data/treeDepths");
+    if (!outFile) {
+        cout << "Error opening output file" << endl;
     }
-    outFile.close();
     BinarySearchTree<int> btree;
     AVLTree<int> atree;
     SplayTree<int> stree;
@@ -26,10 +24,31 @@ int main() {
         int depth = 0;
         bool find = btree.find(i, depth);
         if (find) {
-            cout << i << " found at the depth: " << depth << endl;
+            outFile << i << " found in binary search tree at the depth: " << depth << endl;
         }
         else {
-            cout << i << " not found " <<endl;
+            outFile << i << " not found " <<endl;
         }
     }
+    for (int i = 1; i < 101; i++) {
+        int depth = 0;
+        bool find = atree.find(i, depth);
+        if (find) {
+            outFile << i << " found in AVL tree at the depth: " << depth << endl;
+        }
+        else {
+            outFile << i << " not found " <<endl;
+        }
+    }
+    for (int i = 1; i < 101; i++) {
+        int depth = 0;
+        bool find = stree.find(i, depth);
+        if (find) {
+            outFile << i << " found in splay tree at the depth: " << depth << endl;
+        }
+        else {
+            outFile << i << " not found " <<endl;
+        }
+    }
+    outFile.close();
 }
