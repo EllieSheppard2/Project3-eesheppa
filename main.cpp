@@ -24,6 +24,12 @@ int main() {
     }
     for (int i = 1; i < 101; i++) {
         int depth = 0;
-        cout << btree.find(i, depth) << endl;
+        bool find = btree.find(i, depth);
+        if (find) {
+            cout << i << " found at the depth: " << depth << endl;
+        }
+        else {
+            cout << i << " not found " <<endl;
+        }
     }
 }

@@ -41,7 +41,6 @@ private:
 
     // Helper recursive function to find a value in the tree.
     bool find(const Comparable &c, BinaryNode* n, int& depth) const {
-        depth = 0;
         if (n == nullptr) {
             // Reached a dead end. Value not in tree.
             return false;
@@ -152,6 +151,7 @@ public:
 
     bool find(const Comparable &c, int& depth) const {
         // calls private helper function
+        depth = 0;
         return find(c, root, depth);
     }
 
