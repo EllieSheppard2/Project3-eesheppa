@@ -1,3 +1,4 @@
+Depths for in order values
 1 found in binary search tree at the depth: 0
 2 found in binary search tree at the depth: 1
 3 found in binary search tree at the depth: 2
@@ -298,3 +299,304 @@
 98 found in splay tree at the depth: 1
 99 found in splay tree at the depth: 2
 100 found in splay tree at the depth: 1
+Depths for randomied list
+44 found in binary search tree at the depth: 0
+78 found in binary search tree at the depth: 1
+2 found in binary search tree at the depth: 1
+58 found in binary search tree at the depth: 2
+56 found in binary search tree at the depth: 3
+45 found in binary search tree at the depth: 4
+12 found in binary search tree at the depth: 2
+55 found in binary search tree at the depth: 5
+66 found in binary search tree at the depth: 3
+39 found in binary search tree at the depth: 3
+34 found in binary search tree at the depth: 4
+26 found in binary search tree at the depth: 5
+85 found in binary search tree at the depth: 2
+86 found in binary search tree at the depth: 3
+75 found in binary search tree at the depth: 4
+32 found in binary search tree at the depth: 6
+88 found in binary search tree at the depth: 4
+74 found in binary search tree at the depth: 5
+40 found in binary search tree at the depth: 4
+19 found in binary search tree at the depth: 6
+54 found in binary search tree at the depth: 6
+38 found in binary search tree at the depth: 5
+47 found in binary search tree at the depth: 7
+65 found in binary search tree at the depth: 4
+3 found in binary search tree at the depth: 3
+50 found in binary search tree at the depth: 8
+77 found in binary search tree at the depth: 5
+82 found in binary search tree at the depth: 3
+95 found in binary search tree at the depth: 5
+84 found in binary search tree at the depth: 4
+6 found in binary search tree at the depth: 4
+60 found in binary search tree at the depth: 5
+94 found in binary search tree at the depth: 6
+96 found in binary search tree at the depth: 6
+70 found in binary search tree at the depth: 6
+73 found in binary search tree at the depth: 7
+93 found in binary search tree at the depth: 7
+90 found in binary search tree at the depth: 8
+15 found in binary search tree at the depth: 7
+27 found in binary search tree at the depth: 7
+36 found in binary search tree at the depth: 6
+23 found in binary search tree at the depth: 7
+46 found in binary search tree at the depth: 8
+83 found in binary search tree at the depth: 5
+1 found in binary search tree at the depth: 2
+62 found in binary search tree at the depth: 6
+42 found in binary search tree at the depth: 5
+76 found in binary search tree at the depth: 6
+22 found in binary search tree at the depth: 8
+67 found in binary search tree at the depth: 7
+92 found in binary search tree at the depth: 9
+4 found in binary search tree at the depth: 5
+28 found in binary search tree at the depth: 8
+99 found in binary search tree at the depth: 7
+48 found in binary search tree at the depth: 9
+25 found in binary search tree at the depth: 8
+11 found in binary search tree at the depth: 5
+16 found in binary search tree at the depth: 8
+100 found in binary search tree at the depth: 8
+43 found in binary search tree at the depth: 6
+87 found in binary search tree at the depth: 5
+81 found in binary search tree at the depth: 4
+5 found in binary search tree at the depth: 6
+79 found in binary search tree at the depth: 5
+9 found in binary search tree at the depth: 6
+89 found in binary search tree at the depth: 9
+8 found in binary search tree at the depth: 7
+49 found in binary search tree at the depth: 10
+51 found in binary search tree at the depth: 9
+59 found in binary search tree at the depth: 6
+61 found in binary search tree at the depth: 7
+20 found in binary search tree at the depth: 9
+29 found in binary search tree at the depth: 9
+37 found in binary search tree at the depth: 7
+14 found in binary search tree at the depth: 8
+13 found in binary search tree at the depth: 9
+18 found in binary search tree at the depth: 9
+53 found in binary search tree at the depth: 10
+57 found in binary search tree at the depth: 4
+69 found in binary search tree at the depth: 8
+68 found in binary search tree at the depth: 9
+64 found in binary search tree at the depth: 7
+52 found in binary search tree at the depth: 11
+30 found in binary search tree at the depth: 10
+7 found in binary search tree at the depth: 8
+98 found in binary search tree at the depth: 8
+80 found in binary search tree at the depth: 6
+41 found in binary search tree at the depth: 6
+10 found in binary search tree at the depth: 7
+24 found in binary search tree at the depth: 9
+31 found in binary search tree at the depth: 11
+17 found in binary search tree at the depth: 10
+35 found in binary search tree at the depth: 7
+33 found in binary search tree at the depth: 7
+97 found in binary search tree at the depth: 9
+71 found in binary search tree at the depth: 8
+21 found in binary search tree at the depth: 10
+91 found in binary search tree at the depth: 10
+72 found in binary search tree at the depth: 9
+63 found in binary search tree at the depth: 8
+44 found in AVL tree at the depth: 2
+78 found in AVL tree at the depth: 1
+2 found in AVL tree at the depth: 5
+58 found in AVL tree at the depth: 6
+56 found in AVL tree at the depth: 5
+45 found in AVL tree at the depth: 5
+12 found in AVL tree at the depth: 2
+55 found in AVL tree at the depth: 6
+66 found in AVL tree at the depth: 0
+39 found in AVL tree at the depth: 4
+34 found in AVL tree at the depth: 3
+26 found in AVL tree at the depth: 1
+85 found in AVL tree at the depth: 5
+86 found in AVL tree at the depth: 2
+75 found in AVL tree at the depth: 3
+32 found in AVL tree at the depth: 5
+88 found in AVL tree at the depth: 5
+74 found in AVL tree at the depth: 4
+40 found in AVL tree at the depth: 6
+19 found in AVL tree at the depth: 3
+54 found in AVL tree at the depth: 3
+38 found in AVL tree at the depth: 6
+47 found in AVL tree at the depth: 4
+65 found in AVL tree at the depth: 7
+3 found in AVL tree at the depth: 4
+50 found in AVL tree at the depth: 7
+77 found in AVL tree at the depth: 4
+82 found in AVL tree at the depth: 3
+95 found in AVL tree at the depth: 6
+84 found in AVL tree at the depth: 4
+6 found in AVL tree at the depth: 3
+60 found in AVL tree at the depth: 4
+94 found in AVL tree at the depth: 3
+96 found in AVL tree at the depth: 5
+70 found in AVL tree at the depth: 5
+73 found in AVL tree at the depth: 2
+93 found in AVL tree at the depth: 6
+90 found in AVL tree at the depth: 4
+15 found in AVL tree at the depth: 4
+27 found in AVL tree at the depth: 6
+36 found in AVL tree at the depth: 6
+23 found in AVL tree at the depth: 4
+46 found in AVL tree at the depth: 6
+83 found in AVL tree at the depth: 5
+1 found in AVL tree at the depth: 6
+62 found in AVL tree at the depth: 5
+42 found in AVL tree at the depth: 5
+76 found in AVL tree at the depth: 5
+22 found in AVL tree at the depth: 6
+67 found in AVL tree at the depth: 4
+92 found in AVL tree at the depth: 5
+4 found in AVL tree at the depth: 5
+28 found in AVL tree at the depth: 5
+99 found in AVL tree at the depth: 5
+48 found in AVL tree at the depth: 7
+25 found in AVL tree at the depth: 5
+11 found in AVL tree at the depth: 5
+16 found in AVL tree at the depth: 6
+100 found in AVL tree at the depth: 6
+43 found in AVL tree at the depth: 6
+87 found in AVL tree at the depth: 6
+81 found in AVL tree at the depth: 5
+5 found in AVL tree at the depth: 6
+79 found in AVL tree at the depth: 5
+9 found in AVL tree at the depth: 4
+89 found in AVL tree at the depth: 6
+8 found in AVL tree at the depth: 5
+49 found in AVL tree at the depth: 6
+51 found in AVL tree at the depth: 5
+59 found in AVL tree at the depth: 7
+61 found in AVL tree at the depth: 6
+20 found in AVL tree at the depth: 6
+29 found in AVL tree at the depth: 6
+37 found in AVL tree at the depth: 5
+14 found in AVL tree at the depth: 5
+13 found in AVL tree at the depth: 6
+18 found in AVL tree at the depth: 6
+53 found in AVL tree at the depth: 6
+57 found in AVL tree at the depth: 7
+69 found in AVL tree at the depth: 3
+68 found in AVL tree at the depth: 5
+64 found in AVL tree at the depth: 6
+52 found in AVL tree at the depth: 7
+30 found in AVL tree at the depth: 4
+7 found in AVL tree at the depth: 6
+98 found in AVL tree at the depth: 4
+80 found in AVL tree at the depth: 4
+41 found in AVL tree at the depth: 7
+10 found in AVL tree at the depth: 6
+24 found in AVL tree at the depth: 6
+31 found in AVL tree at the depth: 6
+17 found in AVL tree at the depth: 5
+35 found in AVL tree at the depth: 7
+33 found in AVL tree at the depth: 6
+97 found in AVL tree at the depth: 6
+71 found in AVL tree at the depth: 4
+21 found in AVL tree at the depth: 5
+91 found in AVL tree at the depth: 6
+72 found in AVL tree at the depth: 5
+63 found in AVL tree at the depth: 7
+44 found in splay tree at the depth: 11
+78 found in splay tree at the depth: 6
+2 found in splay tree at the depth: 13
+58 found in splay tree at the depth: 10
+56 found in splay tree at the depth: 7
+45 found in splay tree at the depth: 7
+12 found in splay tree at the depth: 9
+55 found in splay tree at the depth: 5
+66 found in splay tree at the depth: 11
+39 found in splay tree at the depth: 11
+34 found in splay tree at the depth: 5
+26 found in splay tree at the depth: 10
+85 found in splay tree at the depth: 13
+86 found in splay tree at the depth: 4
+75 found in splay tree at the depth: 11
+32 found in splay tree at the depth: 6
+88 found in splay tree at the depth: 6
+74 found in splay tree at the depth: 7
+40 found in splay tree at the depth: 9
+19 found in splay tree at the depth: 10
+54 found in splay tree at the depth: 9
+38 found in splay tree at the depth: 9
+47 found in splay tree at the depth: 10
+65 found in splay tree at the depth: 8
+3 found in splay tree at the depth: 10
+50 found in splay tree at the depth: 8
+77 found in splay tree at the depth: 11
+82 found in splay tree at the depth: 7
+95 found in splay tree at the depth: 9
+84 found in splay tree at the depth: 5
+6 found in splay tree at the depth: 10
+60 found in splay tree at the depth: 13
+94 found in splay tree at the depth: 7
+96 found in splay tree at the depth: 3
+70 found in splay tree at the depth: 11
+73 found in splay tree at the depth: 7
+93 found in splay tree at the depth: 7
+90 found in splay tree at the depth: 8
+15 found in splay tree at the depth: 13
+27 found in splay tree at the depth: 14
+36 found in splay tree at the depth: 7
+23 found in splay tree at the depth: 8
+46 found in splay tree at the depth: 8
+83 found in splay tree at the depth: 8
+1 found in splay tree at the depth: 10
+62 found in splay tree at the depth: 6
+42 found in splay tree at the depth: 10
+76 found in splay tree at the depth: 10
+22 found in splay tree at the depth: 8
+67 found in splay tree at the depth: 9
+92 found in splay tree at the depth: 5
+4 found in splay tree at the depth: 8
+28 found in splay tree at the depth: 10
+99 found in splay tree at the depth: 9
+48 found in splay tree at the depth: 11
+25 found in splay tree at the depth: 8
+11 found in splay tree at the depth: 8
+16 found in splay tree at the depth: 5
+100 found in splay tree at the depth: 7
+43 found in splay tree at the depth: 11
+87 found in splay tree at the depth: 13
+81 found in splay tree at the depth: 9
+5 found in splay tree at the depth: 8
+79 found in splay tree at the depth: 7
+9 found in splay tree at the depth: 8
+89 found in splay tree at the depth: 8
+8 found in splay tree at the depth: 6
+49 found in splay tree at the depth: 8
+51 found in splay tree at the depth: 7
+59 found in splay tree at the depth: 6
+61 found in splay tree at the depth: 5
+20 found in splay tree at the depth: 11
+29 found in splay tree at the depth: 12
+37 found in splay tree at the depth: 8
+14 found in splay tree at the depth: 9
+13 found in splay tree at the depth: 4
+18 found in splay tree at the depth: 7
+53 found in splay tree at the depth: 8
+57 found in splay tree at the depth: 7
+69 found in splay tree at the depth: 8
+68 found in splay tree at the depth: 4
+64 found in splay tree at the depth: 5
+52 found in splay tree at the depth: 7
+30 found in splay tree at the depth: 6
+7 found in splay tree at the depth: 7
+98 found in splay tree at the depth: 14
+80 found in splay tree at the depth: 9
+41 found in splay tree at the depth: 9
+10 found in splay tree at the depth: 8
+24 found in splay tree at the depth: 9
+31 found in splay tree at the depth: 5
+17 found in splay tree at the depth: 7
+35 found in splay tree at the depth: 5
+33 found in splay tree at the depth: 5
+97 found in splay tree at the depth: 7
+71 found in splay tree at the depth: 11
+21 found in splay tree at the depth: 9
+91 found in splay tree at the depth: 7
+72 found in splay tree at the depth: 7
+63 found in splay tree at the depth: 11
