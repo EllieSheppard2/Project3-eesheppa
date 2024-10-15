@@ -1,9 +1,11 @@
 #include "AVLTree.h"
 #include "BinarySearchTree.h"
 #include "SplayTree.h"
+#include "climate_change_impact.h"
 #include <fstream>
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 int main() {
@@ -92,4 +94,69 @@ int main() {
         }
     }
     outFile.close();
+
+    std::vector<ClimateChangeImpact> impacts;
+    ClimateChangeImpact impact;
+
+    if(!impact.loadFile(/"Users/elliesheppard/Project3-eesheppa/climate_change_impact_on_agriculture_2024.csv")) {
+        cout << "Error loading climate change file " << endl;
+    }
+    BinarySearchTree<ClimateChangeImpact> btree3;
+    AVLTree<ClimateChangeImpact> atree3;
+    SplayTree<ClimateChangeImpact> stree3;
+    SplayTree<ClimateChangeImpact> stree4;
+
+    for (const ClimateChangeImpact& imps: impacts) {
+        btree3.add(imps);
+        atree3.add(imps);
+        stree3.add(imps);
+        stree4.add(imps);
+    }
+    std::ofstream outFile("/Users/elliesheppard/Project3-eesheppa/data/treeDepths");
+    if (!outFile) {
+        cout << "Error opening output file" << endl;
+    }
+    outFile << "Depths for in climate change impact items" << endl;
+    for (const auto& imps : impact) {
+        int depth = 0;
+        bool find = btree3.find(imps, depth);
+        if (find) {
+            outFile << imps.getId() << " found in binary search tree at the depth: " << depth << endl;
+        }
+        else {
+            outFile << imps.getId() << " not found " <<endl;
+        }
+    }
+    for (const auto& imps : impact) {
+        int depth = 0;
+        bool find = atree3.find(imps, depth);
+        if (find) {
+            outFile << imps.getId() << " found in AVL tree at the depth: " << depth << endl;
+        }
+        else {
+            outFile << imps.getId() << " not found " <<endl;
+        }
+    }
+    for (const auto& imps : impact) {
+        int depth = 0;
+        bool find = stree3.find(imps, depth);
+        if (find) {
+            outFile << imps.getId() << " found in splay tree at the depth: " << depth << endl;
+        }
+        else {
+            outFile << imps.getId() << " not found " <<endl;
+        }
+    }
+    for (const auto& imps : impact) {
+        for(int i = 0; i < 5; i++) {
+            int depth = 0;
+            bool find = stree3.find(imps, depth);
+            if (find) {
+                outFile << imps.getId() << " found in splay tree at the depth: " << depth << endl;
+            }
+            else {
+                outFile << imps.getId() << " not found " <<endl;
+            }
+        }
+    }
 }
