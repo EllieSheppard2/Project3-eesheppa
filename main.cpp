@@ -14,7 +14,14 @@ int main() {
         outFile << i << endl;
     }
     outFile.close();
-
+    BinarySearchTree<int> btree;
+    AVLTree<int> atree;
+    SplayTree<int> stree;
+    for (int i = 1, int i < 101, i++) {
+        btree.add(i);
+        atree.add(i);
+        stree.add(i);
+    }
     // Example of how to declare and use a tree object
     BinarySearchTree<int> bst1;
     if (!bst1.add(8)) {
