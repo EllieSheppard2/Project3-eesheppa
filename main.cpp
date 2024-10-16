@@ -168,39 +168,39 @@ int main() {
         atree4.add(imps);
         stree5.add(imps);
     }
-    customOut << "Depths for in climate change impact items" << endl;
-    customOut << "  " << endl;
-    customOut << "Depths for binary search tree: " << endl;
+    customOut << "Type,ID,Depth\n" << endl;
+    customOut << "Binary Search Tree: " << endl;
     for (const auto& imps : impacts) {
         int depth = 0;
         bool find = btree3.find(imps, depth);
         if (find) {
-            customOut << imps.getId() << ", " << depth << endl;
+            customOut << "BinarySearchTree," << imps.getId() << "," << depth << endl;
         }
         else {
             customOut << imps.getId() << " not found " <<endl;
         }
     }
-    customOut << "Depths for AVL search tree: " << endl;
+    customOut << "AVL search tree: " << endl;
     for (const auto& imps : impacts) {
         int depth = 0;
         bool find = atree3.find(imps, depth);
         if (find) {
-            customOut << imps.getId() << ", " << depth << endl;
+            customOut <<"AVLTree," << imps.getId() << "," << depth << endl;
         }
         else {
-            customOut << imps.getId() << " not found " <<endl;
+            customOut << imps.getId() << " not found " << endl;
         }
     }
-    customOut << "Depths for Splay tree: " << endl;
+    customOut << "Splay tree: " << endl;
     for (const auto& imps : impacts) {
         int depth = 0;
         bool find = stree3.find(imps, depth);
         if (find) {
-            customOut << imps.getId() << ", " << depth << endl;
+            customOut << "SplayTree," << imps.getId() << "," << depth << endl;
         }
         else {
             customOut << imps.getId() << " not found " <<endl;
         }
     }
+    customOut.close();
 }
