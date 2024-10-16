@@ -77,7 +77,7 @@ public:
     bool operator>(const ClimateChangeImpact& next) const{
       return id > next.id;
     }
-    int getId() {
+    int getId() const {
         return id;
     }
     std::string getCountry() const {
@@ -232,7 +232,7 @@ public:
 
             double ratio = (irrigation_access_percent/extreme_weather_events);
 
-            std:: cout << "Country: " << country << ", Year: " << year << ", Ratio: " << ratio << " | ";
+           //** std:: cout << "Country: " << country << ", Year: " << year << ", Ratio: " << ratio << " | ";
 
             ClimateChangeImpact impact(id, country, region, crop_type, adaptation_strategies, year, extreme_weather_events,
                 total_precipitation_mm, co2_emissions_mt, irrigation_access_percent, pesticide_use_kg_per_ha,

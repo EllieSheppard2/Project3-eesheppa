@@ -93,12 +93,10 @@ int main() {
             outFile << value << " not found " <<endl;
         }
     }
-    outFile.close();
-
     std::vector<ClimateChangeImpact> impacts;
     ClimateChangeImpact impact;
 
-    if(!impact.loadFile(/"Users/elliesheppard/Project3-eesheppa/climate_change_impact_on_agriculture_2024.csv")) {
+    if(!impact.loadFile("/Users/elliesheppard/Project3-eesheppa/climate_change_impact_on_agriculture_2024.csv", impacts)) {
         cout << "Error loading climate change file " << endl;
     }
     BinarySearchTree<ClimateChangeImpact> btree3;
@@ -112,12 +110,8 @@ int main() {
         stree3.add(imps);
         stree4.add(imps);
     }
-    std::ofstream outFile("/Users/elliesheppard/Project3-eesheppa/data/treeDepths");
-    if (!outFile) {
-        cout << "Error opening output file" << endl;
-    }
     outFile << "Depths for in climate change impact items" << endl;
-    for (const auto& imps : impact) {
+    for (const auto& imps : impacts) {
         int depth = 0;
         bool find = btree3.find(imps, depth);
         if (find) {
@@ -127,7 +121,7 @@ int main() {
             outFile << imps.getId() << " not found " <<endl;
         }
     }
-    for (const auto& imps : impact) {
+    for (const auto& imps : impacts) {
         int depth = 0;
         bool find = atree3.find(imps, depth);
         if (find) {
@@ -137,7 +131,7 @@ int main() {
             outFile << imps.getId() << " not found " <<endl;
         }
     }
-    for (const auto& imps : impact) {
+    for (const auto& imps : impacts) {
         int depth = 0;
         bool find = stree3.find(imps, depth);
         if (find) {
@@ -147,7 +141,7 @@ int main() {
             outFile << imps.getId() << " not found " <<endl;
         }
     }
-    for (const auto& imps : impact) {
+    for (const auto& imps : impacts) {
         for(int i = 0; i < 5; i++) {
             int depth = 0;
             bool find = stree3.find(imps, depth);
@@ -159,4 +153,5 @@ int main() {
             }
         }
     }
+    outFile.close();
 }
