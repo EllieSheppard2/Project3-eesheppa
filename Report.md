@@ -35,7 +35,12 @@ Answer the following questions directly in this file:
   * You do not need to graph the depths of the integer type trees or the Splay Tree that finds each object 5 times in a row, but you can if you feel it helps you analyze the data.
   * An example graph spreadsheet and an example graph image have been included in the starter code.
   * Here is how you include an image in your Report.md file: ![example graph](graphs/example-graph.png)
-* Compare and contrast the graphs and explain the differences based on what you know about the structure and behavior of the trees. Justify the time complexity of searching the trees based on the results.
+  * Compare and contrast the graphs and explain the differences based on what you know about the structure and behavior of the trees. Justify the time complexity of searching the trees based on the results.
+
+  * The binary search tree graph looks like a straight line, because it is. This is because each ID value is assigned to a node of the same value. The ID values are in order, so the binary search tree adds a new node for each value.
+  * The AVL tree has my favorite graph. It has spare spots on the bottom, and gets denser as the depth goes towards 12. It is pretty much evenly distributed left and right. Because the AVL tree works to balance itself, it makes sense that there
+  * would be more deeper nodes and it would go towards a much lower max depth than the binary tree. The splay tree is pretty much the opposite of the AVL tree, with some high depth values and a lot of lows. This is because the splay tree is repositioning values to be of less depth
+  * for easier repeated access, so more end up on the lower end.
 
 **Note: Any code that was not authored by yourself or the instructor must be cited in your report. This includes the use of concepts not taught in lecture.**
 * I have been referring to Starting Out With C++ eighth edition, so there may be concepts not taught in class.
