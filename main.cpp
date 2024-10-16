@@ -154,4 +154,53 @@ int main() {
         }
     }
     outFile.close();
+    std::ofstream customOut("/Users/elliesheppard/Project3-eesheppa/data/customDataTrees.csv");
+    
+    if(!impact.loadFile("/Users/elliesheppard/Project3-eesheppa/climate_change_impact_on_agriculture_2024.csv", impacts)) {
+        cout << "Error loading climate change file " << endl;
+    }
+    BinarySearchTree<ClimateChangeImpact> btree4;
+    AVLTree<ClimateChangeImpact> atree4;
+    SplayTree<ClimateChangeImpact> stree5;
+
+    for (const ClimateChangeImpact& imps: impacts) {
+        btree4.add(imps);
+        atree4.add(imps);
+        stree5.add(imps);
+    }
+    customOut << "Depths for in climate change impact items" << endl;
+    customOut << "  " << endl;
+    customOut << "Depths for binary search tree: " << endl;
+    for (const auto& imps : impacts) {
+        int depth = 0;
+        bool find = btree3.find(imps, depth);
+        if (find) {
+            customOut << imps.getId() << ", " << depth << endl;
+        }
+        else {
+            customOut << imps.getId() << " not found " <<endl;
+        }
+    }
+    customOut << "Depths for AVL search tree: " << endl;
+    for (const auto& imps : impacts) {
+        int depth = 0;
+        bool find = atree3.find(imps, depth);
+        if (find) {
+            customOut << imps.getId() << ", " << depth << endl;
+        }
+        else {
+            customOut << imps.getId() << " not found " <<endl;
+        }
+    }
+    customOut << "Depths for Splay tree: " << endl;
+    for (const auto& imps : impacts) {
+        int depth = 0;
+        bool find = stree3.find(imps, depth);
+        if (find) {
+            customOut << imps.getId() << ", " << depth << endl;
+        }
+        else {
+            customOut << imps.getId() << " not found " <<endl;
+        }
+    }
 }
